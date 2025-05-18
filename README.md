@@ -2,7 +2,7 @@
 
 TryCode is a feature-rich online code editor that supports multiple programming languages with real-time execution and output display. It provides a seamless coding experience with a clean, responsive interface and dark/light mode support.
 
-![TryCode Banner](https://via.placeholder.com/1200x400/1A1A1D/FFFFFF?text=TryCode+Multi-Language+Editor)
+![image](https://github.com/user-attachments/assets/d724b202-b557-4be7-a6dc-7be3ebea4d0d)
 
 ## Features ✨
 
