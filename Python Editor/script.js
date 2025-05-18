@@ -56,8 +56,16 @@ function clearOutput() {
   document.getElementById("output").textContent = ">";
 }
 
+function switchToHtmlcssjs() {
+  window.open('../HTMLCSSJS Editor/index.html', '_blank');
+}
+
 function switchToJS() {
   window.open('../Javascript Editor/index.html', '_blank');
+}
+
+function switchToSql() {
+  window.open('../SQL Editor/index.html', '_blank');
 }
 
 // Resizer Functionality
@@ -99,15 +107,15 @@ const currentTheme = localStorage.getItem('theme') ||
 
 if (currentTheme === 'light') {
   document.body.classList.add('light-mode');
-  toggle.src = "Attachments/moon.png";
+  toggle.src = "/TryCode Editor/Attachments/moon.png";
 }
 
 // Toggle functionality
 toggle.addEventListener('click', () => {
   const isLight = document.body.classList.toggle('light-mode');
   localStorage.setItem('theme', isLight ? 'light' : 'dark');
-  toggle.src = isLight ? "Attachments/moon.png" 
-                      : "Attachments/sun.png";
+  toggle.src = isLight ? "/TryCode Editor/Attachments/moon.png" 
+                      : "/TryCode Editor/Attachments/sun.png";
 });
 
 // Watch for system theme changes
@@ -115,6 +123,6 @@ prefersDarkScheme.addListener(e => {
   const newTheme = e.matches ? 'dark' : 'light';
   document.body.classList.toggle('light-mode', !e.matches);
   localStorage.setItem('theme', newTheme);
-  toggle.src = e.matches ? "Attachments/sun.png" 
-                        : "Attachments/moon.png";
+  toggle.src = e.matches ? "/TryCode Editor/Attachments/sun.png" 
+                        : "/TryCode Editor/Attachments/moon.png";
 });

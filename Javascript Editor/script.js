@@ -3,8 +3,12 @@ function switchToPython() {
     window.open('../Python Editor/index.html', '_blank');
 }
 
-function switchToHTML() {
-  alert("HTML/CSS/JS editor coming soon!");
+function switchToSql() {
+    window.open('../SQL Editor/index.html', '_blank');
+}
+
+function switchToHtmlcssjs() {
+    window.open('../HTMLCSSJS Editor/index.html', '_blank');
 }
 
 function switchToJS() {

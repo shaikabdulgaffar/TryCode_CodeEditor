@@ -24,7 +24,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #3B1C32;
+  border-bottom: 1px solid #3b82f6;
 }
 
 body.light-mode header {
@@ -35,7 +35,7 @@ body.light-mode header {
 .logo {
   font-size: 1.4em;
   font-weight: bold;
-  color: #A64D79;
+  color: #3b82f6;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -59,37 +59,37 @@ body.light-mode .logo {
 .lang-buttons button {
   background-color: #2A2A2E;
   color: #F0E6EF;
-  border: 1px solid #3B1C32;
+  border: 1px solid #3b82f6;
   padding: 6px 12px;
   cursor: pointer;
   border-radius: 4px;
   font-size: 13px;
-  border: 1px solid #6A1E55;
+  border: 1px solid #3b82f6;
 }
 
 body.light-mode .lang-buttons button {
   background-color: #ffffff;
   color: #4b5563;
-  border: 1px solid #2563eb;
+  border: 1px solid #3b82f6;
 }
 
 .lang-buttons button:hover {
-  background-color: #6A1E55;
+  background-color: #3b82f6;
   color: #FFFFFF;
-  border: 1px solid #A64D79;
+  border: 1px solid #3b82f6;
 }
 
 body.light-mode .lang-buttons button:hover {
   background-color: #e0f2fe;
-  color: #2563eb;
+  color: #3b82f6;
   border: 1px solid #3b82f6;
 }
 
 /* Active language button styling */
 .lang-buttons button.active-lang {
-  background-color: #A64D79;
+  background-color: #3b82f6;
   color: #FFFFFF;
-  border: 1px solid #A64D79;
+  border: 1px solid #3b82f6;
 }
 
 body.light-mode .lang-buttons button.active-lang {
@@ -120,7 +120,7 @@ body.light-mode .output-panel {
 
 .panel {
   width: 50%;
-  border-right: 1px solid #3B1C32;
+  border-right: 1px solid #3b82f6;
 }
 
 body.light-mode .panel {
@@ -143,7 +143,7 @@ body.light-mode .output-panel {
   padding: 8px 12px;
   background-color: #2A2A2E;
   height: 45px;
-  border-bottom: 1px solid #6A1E55;
+  border-bottom: 1px solid #3b82f6;
 }
 
 body.light-mode .top-bar {
@@ -152,13 +152,13 @@ body.light-mode .top-bar {
 }
 
 .file-label {
-  color: #A64D79;
+  color: #3b82f6;
   font-weight: bold;
   font-size: 14px;
 }
 
 body.light-mode .file-label {
-  color: #2563eb;
+  color: #3b82f6;
 }
 
 .button-group button {
@@ -171,9 +171,9 @@ body.light-mode .file-label {
 }
 
 /* Dark mode buttons */
-.run { background-color: #6A1E55; color: #ffffff; }
-.copy { background-color: #6A1E55; color: #ffffff; }
-.clear { background-color: #6A1E55; color: #ffffff; }
+.run { background-color: #3b82f6; color: #ffffff; }
+.copy { background-color: #3b82f6; color: #ffffff; }
+.clear { background-color: #3b82f6; color: #ffffff; }
 
 /* Light mode buttons */
 body.light-mode .run { background-color: #3b82f6; color: rgb(255, 255, 255); }
@@ -205,7 +205,7 @@ pre.output-area {
 /* Vertical Resizer */
 .resizer {
   width: 2px;
-  background: #6A1E55;
+  background: #3b82f6;
   cursor: col-resize;
 }
 
@@ -214,7 +214,7 @@ body.light-mode .resizer {
 }
 
 .resizer:hover {
-  background: #A64D79;
+  background: #3b82f6;
 }
 
 body.light-mode .resizer:hover {
@@ -248,7 +248,7 @@ body.light-mode .resizer:hover {
   
   .panel {
     border-right: none;
-    border-bottom: 1px solid #3B1C32;
+    border-bottom: 1px solid #3b82f6;
   }
   
   body.light-mode .panel {
@@ -275,4 +275,3 @@ body.light-mode .resizer:hover {
   justify-content: center;
   padding: 6px 10px 6px 8px;
 }
-

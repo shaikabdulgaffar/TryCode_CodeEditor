@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML/CSS/JS Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <img src="/TryCode Editor/Attachments/logo.png" alt="TryCode Logo" class="logo-img">
+        <span>TryCode | HTML/CSS/JS</span>
+    </div>
+    <div class="lang-buttons">
+      <button onclick="alert('You are already in HTML/CSS/JS editor!!!')" class="active-lang">
+        <img src="/TryCode Editor/Attachments/htmlcssjs.png" class="lang-icon">
+        HTML/CSS/JS
+      </button>
+      <button onclick="switchToPython()">
+        <img src="/TryCode Editor/Attachments/python.png" class="lang-icon">
+        Python
+      </button>
+      <button onclick="switchToJS()">
+        <img src="/TryCode Editor/Attachments/javascript.png" class="lang-icon">
+        JavaScript
+      </button>
+      <button onclick="switchToSql()">
+        <img src="/TryCode Editor/Attachments/sql.png" class="lang-icon">
+        SQL
+      </button>
+      <img id="darkModeToggle" src="/TryCode Editor/Attachments/sun.png" alt="Toggle Dark Mode" class="toggle-icon">
+    </div>
+  </header><hr>
+
+  <div class="container">
+    <!-- Code Panel -->
+    <div class="code-container">
+      <div class="top-bar">
+        <div class="code-tabs">
+          <div class="code-tab active" onclick="switchTab('html')">HTML</div>
+          <div class="code-tab" onclick="switchTab('css')">CSS</div>
+          <div class="code-tab" onclick="switchTab('js')">JavaScript</div>
+        </div>
+        <div class="button-group">
+          <button class="copy" onclick="copyCode()">Copy</button>
+        </div>
+      </div>
+      <div class="code-editor">
+        <div class="code-block active" id="html-block">
+          <textarea id="html-code" spellcheck="false"></textarea>
+        </div>
+        <div class="code-block" id="css-block">
+          <textarea id="css-code" spellcheck="false"></textarea>
+        </div>
+        <div class="code-block" id="js-block">
+          <textarea id="js-code" spellcheck="false"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resizer Divider -->
+    <div class="resizer" id="dragbar"></div>
+
+    <!-- Output Panel -->
+    <div class="output-panel">
+      <div class="top-bar">
+        <div class="file-label">Output</div>
+      </div>
+      <div class="output-area">
+        <iframe id="output"></iframe>
+      </div>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
